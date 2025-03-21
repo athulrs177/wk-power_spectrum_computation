@@ -15,5 +15,5 @@ jobs:
         run: |
           git config --global user.name "GitHub Mirror Bot"
           git config --global user.email "athulrs177@users.noreply.github.com"
-          git remote add gitlab https://oauth2:${{ secrets. }}@gitlab.kit.edu/kit/imk-tro/wg-knippertz/tools.git
+          git remote add gitlab https://oauth2:${{ secrets.GITLAB_REPO_MIRROR }}@gitlab.kit.edu/kit/imk-tro/wg-knippertz/tools.git
           git push --force gitlab main
